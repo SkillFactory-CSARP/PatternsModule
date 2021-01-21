@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace SingletonRealExample
 {
@@ -6,6 +7,8 @@ namespace SingletonRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // создаем объект приложения
             Application app = new Application();
             

@@ -1,4 +1,6 @@
-﻿using FacadeRealExample.Components;
+﻿using System;
+using System.Text;
+using FacadeRealExample.Components;
 
 namespace FacadeRealExample
 {
@@ -6,6 +8,8 @@ namespace FacadeRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // при запуске IDE инициализирует объекты для работы с компонентами
             Editor textEditor = new Editor();
             Compiller compiller = new Compiller();

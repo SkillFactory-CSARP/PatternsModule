@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace OpenCloseExample
 {
@@ -6,6 +7,8 @@ namespace OpenCloseExample
     {
         public void GroundLanding()
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             Console.WriteLine("Сбрасываем скорость");
             Console.WriteLine("Опускаем руль высоты");
             Console.WriteLine("Сбрасываем скорость");

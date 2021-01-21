@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using AdapterRealExample.Devices;
 
 namespace AdapterRealExample
@@ -7,6 +8,8 @@ namespace AdapterRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // Нам надо отрисовать изображение на бумаге и холсте
             // Запускаем класс для отрисовки
             var imageDrawer = new ImageDrawer();

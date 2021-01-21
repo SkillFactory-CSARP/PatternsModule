@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using AbstractFactoryRealExample.Factories;
 
 namespace AbstractFactoryRealExample
@@ -7,6 +8,8 @@ namespace AbstractFactoryRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // Создание дракона через фабрику
             var dragon = new Monster(new DragonFactory());
             dragon.Move();

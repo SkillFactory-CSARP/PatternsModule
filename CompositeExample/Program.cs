@@ -1,4 +1,6 @@
-﻿using CompositeExample.Components;
+﻿using System;
+using System.Text;
+using CompositeExample.Components;
 
 namespace CompositeExample
 {
@@ -9,6 +11,8 @@ namespace CompositeExample
     {
         public  static void Main()
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // Создание корневой папки
             Component rootFolder = new Folder("Root");
             

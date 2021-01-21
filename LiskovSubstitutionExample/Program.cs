@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using LiskovSubstitutionExample.Flights;
 
 namespace LiskovSubstitutionExample
@@ -8,6 +9,8 @@ namespace LiskovSubstitutionExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // Новый список полётов
             var flightsList = new List<Flight>()
             {

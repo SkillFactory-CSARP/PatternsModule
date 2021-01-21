@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using InterfaceSegregationPrinciple.Cars;
 
 namespace InterfaceSegregationPrinciple
@@ -7,6 +8,8 @@ namespace InterfaceSegregationPrinciple
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // наш водитель
             var driver = new Driver();
               

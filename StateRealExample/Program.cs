@@ -1,4 +1,6 @@
-﻿using StateRealExample.States;
+﻿using System;
+using System.Text;
+using StateRealExample.States;
 
 namespace StateRealExample
 {
@@ -6,6 +8,8 @@ namespace StateRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // инициализируем лифт (находится на земле)
             Elevator elevator = new Elevator(new GroundElevatorState());
             

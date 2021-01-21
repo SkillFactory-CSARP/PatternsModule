@@ -1,4 +1,6 @@
-﻿using ObserverRealExample.Observers;
+﻿using System;
+using System.Text;
+using ObserverRealExample.Observers;
 
 namespace ObserverRealExample
 {
@@ -6,6 +8,8 @@ namespace ObserverRealExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             Stock stock = new Stock();
             
             var bank = new Bank(stock);

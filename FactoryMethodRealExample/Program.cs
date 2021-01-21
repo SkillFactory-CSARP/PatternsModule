@@ -1,9 +1,14 @@
-﻿namespace FactoryMethodRealExample
+﻿using System;
+using System.Text;
+
+namespace FactoryMethodRealExample
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             string messageText = "Ваш номер заказа - 83456";
 
             // Отправляем заказ по SMS

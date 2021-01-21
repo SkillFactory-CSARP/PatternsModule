@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using OpenCloseGoodExample.Profiles;
 
 namespace OpenCloseGoodExample
@@ -7,6 +8,8 @@ namespace OpenCloseGoodExample
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             var boardComputer = new BoardComputer();
             
             //  посадка на землю

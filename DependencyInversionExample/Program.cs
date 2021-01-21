@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace DependencyInversionExample.Devices
 {
@@ -6,6 +7,8 @@ namespace DependencyInversionExample.Devices
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
             //  выводим на монитор
             var connectedMonitor = new VideoAdapter(new Monitor());
             connectedMonitor.Display();
